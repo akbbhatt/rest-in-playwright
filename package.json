@@ -1,0 +1,26 @@
+{
+  "name": "rest-in-playwright",
+  "version": "1.0.0",
+  "description": "Project to showcase API testing using Playwright",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akbbhatt/rest-in-playwright.git"
+  },
+  "author": "Anil Balachandra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akbbhatt/rest-in-playwright/issues"
+  },
+  "homepage": "https://github.com/akbbhatt/rest-in-playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.0"
+  }
+}
