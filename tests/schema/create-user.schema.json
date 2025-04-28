@@ -1,0 +1,19 @@
+{
+    "title": "Post",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string",
+            "description": "The title of the post"
+        },
+        "body": {
+            "type": "string",
+            "description": "The content of the post"
+        },
+        "userId": {
+            "type": "integer",
+            "description": "Identifier of the user who created the post"
+        }
+    },
+    "required": ["title", "body", "userId"]
+}
