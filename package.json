@@ -10,7 +10,8 @@
         "test": "npx playwright test",
         "format": "npx prettier --write .",
         "lint": "eslint .",
-        "lint:fix": "eslint . --fix"
+        "lint:fix": "eslint . --fix",
+        "compile": "tsc --noEmit"
     },
     "repository": {
         "type": "git",

@@ -1,4 +1,4 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig } from '@playwright/test';
 
 /**
  * Read environment variables from file.
@@ -21,7 +21,7 @@ export default defineConfig({
     retries: process.env.CI ? 2 : 0,
     /* Opt out of parallel tests on CI. */
     workers: process.env.CI ? 1 : undefined,
-    
+
     /* Reporter to use. See https://playwright.dev/docs/test-reporters */
     reporter: 'html',
     /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
@@ -37,7 +37,7 @@ export default defineConfig({
     /* Configure projects for major browsers */
     projects: [
         {
-            name: 'api-test'
+            name: 'api-test',
         },
 
         // {

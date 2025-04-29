@@ -1,6 +1,6 @@
 import test, { expect } from '@playwright/test';
-import { validateSchema } from '../src/schemaValidator';
-import userSchema from './schema/userSchema.json';
+import { validateSchema } from '@src/schemaValidator';
+import userSchema from '@schema/userSchema.json';
 
 const headers: Record<string, string> = {
     'Content-Type': 'application/json',

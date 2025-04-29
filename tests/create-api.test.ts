@@ -1,6 +1,6 @@
 import test, { expect } from '@playwright/test';
-import { validateSchema } from '../src/schemaValidator';
-import userSchema from './schema/create-user.schema.json';
+import { validateSchema } from '@src/schemaValidator';
+import userSchema from '@schema/create-user.schema.json';
 
 const headers: Record<string, string> = {
     'Content-Type': 'application/json',
@@ -40,6 +40,3 @@ test('Create and get the newly created user', async ({ request }) => {
     const getUserData = await getUserResponse.json();
     expect(getUserData.id).toEqual(userId);
 });
-
-//TODO: Implement the following test after delete API is available
-test('Create and delete a user', async ({ request }) => {});
